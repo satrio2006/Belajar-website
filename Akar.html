@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      p{
+        font-family: Sans-Serif;
+        font-weight: bold;
+        font-size: 70px;
+      }
+      input{
+        font-size: 70px;
+        width: 250px;
+        margin-left: 5%;
+      }
+      button{
+        margin-left: 7%;
+        font-size: 70px;
+        background: none;
+        outline: none;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+      <p>Calculator</p>
+      <input type="number"number id="inp">
+      <button onclick="akar()">Akar</button>
+      <p id="liat">0</p>
+    <script>
+    var b;
+    var w;
+    var r = [];
+      function akar(){
+        var inp = document.getElementById("inp").value;
+        b = Math.sqrt(inp);
+        var liat = document.getElementById("liat").innerHTML = "hasil : "+b;
+      }
+    </script>
+  </body>
+</html>
